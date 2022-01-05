@@ -140,7 +140,7 @@
     const path = window.location.pathname;
     const locationNoTrailing =
       path.endsWith('/') && path.length > 1
-        ? path.substr(0, path.length - 1)
+        ? path.substring(0, path.length - 1)
         : path;
     if (locationNoTrailing === linkNoAnchor) {
       this.classList.add('active');
