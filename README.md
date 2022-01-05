@@ -6,6 +6,14 @@ This theme is a simple, customizable portfolio for designers or web developers.
 
 ![Screenshot](https://raw.githubusercontent.com/tylerjlawson/port-hugo/master/images/screenshot.png)
 
+
+## Zhe's modifications
+
+- Correctly center the hero image
+- Fix various rendering errors and hard-coded paths in js
+- Remove redundant css and js code originally from `Somrat`
+- NOTE: I have yet to test the modified portfolio section.
+
 ## Features
 
 - Responsive portfolio
@@ -22,7 +30,7 @@ This theme is a simple, customizable portfolio for designers or web developers.
 hugo new site your-site-name # if you already have a site ignore this line and the next
 cd your-site-name
 cd themes
-git clone https://github.com/tylerjlawson/port-hugo.git
+git clone https://github.com/chen-zhe/port-hugo.git
 ```
 
 Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `config.toml` file:

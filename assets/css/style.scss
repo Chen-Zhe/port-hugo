@@ -887,8 +887,7 @@ ul.experience-chart {
   }
 }
 .footer {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding: 10px 0;
   position: relative;
   z-index: 2;
   hr {
@@ -900,7 +899,7 @@ ul.experience-chart {
   display: flex;
   width: fit-content;
   margin: auto;
-  margin-top: 15px;
+  padding-bottom: 20px;
 
   div {
     display: inline-block;
@@ -921,11 +920,10 @@ ul.experience-chart {
   }
 }
 .credit {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  right: 0;
   text-align: center;
+}
+.theme-credit{
+  color: #777;
 }
 .hero-image {
   height: 100%;
