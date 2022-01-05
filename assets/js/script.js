@@ -117,20 +117,6 @@
 	----------------------------------*/
 
   /*--------------------------------
-	 Start Header
-		----------------------------------*/
-  // Toggle Fullscreen Navigation
-  $('#burger').on('click', function () {
-    $('.fullscreen-nav-container').slideToggle(300);
-  });
-  $('.fullscreen-nav-holder a, .turn-home').on('click', function () {
-    $('#burger').trigger('click');
-  });
-  /*--------------------------------
-		 End Header
-	----------------------------------*/
-
-  /*--------------------------------
 	Start Menu
 	----------------------------------*/
 
@@ -147,14 +133,16 @@
     }
   });
 
-  var logo_is_light = false;
+  var logo_is_light = true;
 
   function toggleLogoImg(id) {
     var img = document.getElementById(id);
     if (logo_is_light) {
       img.src = img.dataset.dark;
+      logo_is_light = false;
     } else {
       img.src = img.dataset.light;
+      logo_is_light = true;
     }
   }
 
@@ -215,21 +203,6 @@
   });
   /*--------------------------------
 			End About Me
-	----------------------------------*/
-
-  /*--------------------------------
-			 Start Portfolio
-	----------------------------------*/
-
-  /*--------------------------------
-			 End Portfolio
-	----------------------------------*/
-
-  /*--------------------------------
-			 Start Testimonials
-	----------------------------------*/
-  /*--------------------------------
-			End Testimonials
 	----------------------------------*/
 
   /*--------------------------------
@@ -296,20 +269,6 @@
   /*--------------------------------
 			Others
 	----------------------------------*/
-  // Code for Internet Explorer
-  if (
-    navigator.appName == 'Microsoft Internet Explorer' ||
-    !!(
-      navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)
-    ) ||
-    (typeof $.browser !== 'undefined' && $.browser.msie == 1)
-  ) {
-    $('.header, .fullscreen-nav-container, .like-me, .contact').css(
-      'background-attachment',
-      'scroll'
-    );
-    $('.fullscreen-nav-holder').css('width', '100vw');
-  }
   /*--------------------------------
 			Others
   ----------------------------------*/
