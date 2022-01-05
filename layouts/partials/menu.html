@@ -3,13 +3,14 @@
     <!-- desktop-menu -->
     <div class="menu-container">
       <div class="desktop-menu-logo">
-        <a href="{{ .Site.BaseURL | relLangURL }}"
-          ><img
+        <img
             class="img-fluid"
             src="{{ .Site.Params.logo_light | relURL }}"
             alt="{{ .Site.Title }}"
+            data-light="{{ .Site.Params.logo_light | relURL }}"
+            data-dark="{{ .Site.Params.logo_dark | relURL }}"
             id="desktop-logo"
-        /></a>
+        />
       </div>
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range .Site.Menus.main }}
