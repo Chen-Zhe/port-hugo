@@ -487,9 +487,11 @@ label {
 }
 .mobile-menu-logo {
   height: 100%;
+  align-items: center;
+  display: flex;
   img {
     height: 80%;
-    margin: 4px 0 0 15px;
+    margin-left: 15px;
   }
 }
 .mobile-menu-icons {
