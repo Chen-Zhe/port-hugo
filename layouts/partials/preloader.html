@@ -1,4 +1,4 @@
-{{ if .Site.Params.preloader.enable }} {{ "<!-- preloader start -->" | safeHTML }}
+{{ if .Site.Params.preloader.enable }}
 <div class="preloader">
   {{- if isset .Site.Params.preloader "preloader" -}}
   <img src="{{ .Site.Params.preloader.preloader | relURL }}" alt="preloader" />
@@ -6,4 +6,4 @@
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
   {{- end -}}
 </div>
-{{ "<!-- preloader end -->" | safeHTML }} {{ end }}
+{{ end }}
