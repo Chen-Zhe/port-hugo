@@ -379,13 +379,12 @@ label {
 .desktop-menu-logo {
   img {
     height: 70%;
-    margin-left: 20px;
   }
   height: 100%;
   display: flex;
   align-items: center;
   position: absolute;
-  left: 1px;
+  left: 25px;
 }
 .menu-item {
   height: 100%;
@@ -468,9 +467,10 @@ label {
   height: 100%;
   align-items: center;
   display: flex;
+  position: absolute;
+  left: 14px;
   img {
-    height: 80%;
-    margin-left: 15px;
+    height: 76%;
   }
 }
 .mobile-menu-icons {
