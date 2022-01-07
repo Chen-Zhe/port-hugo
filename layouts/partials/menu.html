@@ -2,7 +2,7 @@
   <nav>
     <!-- desktop-menu -->
     <div class="menu-container">
-      <a href="{{ .URL }}#header" class="desktop-menu-logo">
+      <a href="{{ .Site.BaseURL }}#header" class="desktop-menu-logo">
         <img
             class="img-fluid"
             src="{{ .Site.Params.logo_light | relURL }}"
@@ -28,7 +28,7 @@
             <span></span>
           </a>
         </div>
-        <a href="{{ .URL }}#header" class="mobile-menu-logo">
+        <a href="{{ .Site.BaseURL }}#header" class="mobile-menu-logo">
           <img
               class="img-fluid"
               src="{{ .Site.Params.logo_dark | relURL }}"
