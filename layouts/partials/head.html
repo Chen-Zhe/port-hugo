@@ -19,7 +19,7 @@
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
 
-  {{ $styles := resources.Get "css/style.scss" | resources.ToCSS | minify }}
+  {{ $styles := resources.Get "css/style.scss" | css.Sass | minify }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen" />
 
   {{ "<!--Favicon-->" | safeHTML }}
@@ -56,5 +56,5 @@
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}" />
   {{ end }}
 
-  {{ template "_internal/google_analytics.html" . }}
+  {{- partial "google_analytics.html" . -}}
 </head>
